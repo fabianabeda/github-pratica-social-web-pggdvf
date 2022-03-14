@@ -1,0 +1,15 @@
+<p>{{titulo}}</p>
+<p>{{aluno}}</p>
+
+<br>
+Aluno: <input [(ngModel)]="usuario.nome"><br>
+Matrícula: <input [(ngModel)]="usuario.cpf"><br>
+Curso: <input [(ngModel)]="usuario.idade"><br>
+Turno: <input [(ngModel)]="usuario.idade"><br>
+<button (click)="inserirUsuario()">Enviar</button>
+
+<br>
+
+<ul>
+  <li *ngFor="let usuario of usuarios">{{usuario.nome}}</li>
+</ul>
